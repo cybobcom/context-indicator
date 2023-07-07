@@ -1,0 +1,39 @@
+{
+	"name": "cybob/context-indicator",
+	"type": "typo3-cms-extension",
+	"description": "Makes the application context more prominent in the backend.",
+	"keywords": [
+		"TYPO3 CMS",
+		"Extension",
+		"Application",
+		"Context",
+		"Development"
+	],
+	"homepage": "https://www.cybob.com",
+	"license": "GPL-2.0-or-later",
+	"authors": [
+		{
+			"name": "Marvin Buchmann",
+			"role": "Developer",
+			"email": "marvin.buchmann@cybob.com",
+			"homepage": "https://www.cybob.com"
+		}
+	],
+	"require": {
+		"php": ">=7.4",
+		"typo3/cms-core": "^11.5 || ^12"
+	},
+	"autoload": {
+		"psr-4": {
+			"CYBOB\\ContextIndicator\\": "Classes"
+		}
+	},
+	"replace": {
+		"typo3-ter/context_indicator": "*"
+	},
+	"extra": {
+		"typo3/cms": {
+			"extension-key": "context_indicator"
+		}
+	}
+}

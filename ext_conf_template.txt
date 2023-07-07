@@ -1,0 +1,17 @@
+# cat=basic/enable; type=boolean; label=Show production context: Adds prefix or suffix for production as well.
+showProduction =
+
+# cat=basic/enable; type=options[Prefix=prefix,Suffix=suffix]; label=Type: Prefix or suffix site name.
+type = prefix
+
+# cat=basic/enable; type=string; label=Context template: Template of the context string. {{ CONTEXT }} is replaced by the actual application context.
+template = [{{ CONTEXT }}]
+
+# cat=color/color; type=color; label=Production color: Color for production context.
+colors.production =
+
+# cat=color/color; type=color; label=Testing color: Color for testing context.
+colors.testing =
+
+# cat=color/color; type=color; label=Development color: Color for development context.
+colors.development =
